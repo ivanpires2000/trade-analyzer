@@ -1,0 +1,168 @@
+.strategy-selector {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.strategy-selector h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group select,
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-group select:focus,
+.input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.popular-assets {
+    margin-top: 10px;
+}
+
+.popular-assets p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.asset-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.asset-buttons button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f8f9fa;
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.asset-buttons button:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+}
+
+.asset-buttons button.selected {
+    background: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.loading {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.strategy-select-container {
+    width: 100%;
+}
+
+.strategy-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.strategy-select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.strategy-description {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.analyze-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.analyze-button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.analyze-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.analysis-result {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+}
+
+.analysis-result h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.analysis-result p {
+    margin: 0.5rem 0;
+    color: #34495e;
+}
+
+.analysis-result strong {
+    color: #2c3e50;
+}
+
+@media (max-width: 600px) {
+    .strategy-selector {
+        padding: 1rem;
+    }
+    
+    .input-group {
+        gap: 0.8rem;
+    }
+} 
