@@ -1,70 +1,92 @@
-# Introdução ao Create React App
+# Trade Analyzer
 
-Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+## Sobre o Projeto
 
-## Scripts disponíveis
+Trade Analyzer é uma aplicação web que permite aos usuários analisar e simular cenários de trading. Esta ferramenta é projetada para ajudar traders a tomar decisões mais informadas, oferecendo simulações baseadas em dados históricos e parâmetros personalizáveis.
 
-No diretório do projeto, você pode executar:
+## Funcionalidades Principais
 
-### `npm start`
+- Simulação de cenários de trading
+- Análise de ativos
+- Visualização de resultados de simulação
+- Configurações avançadas para simulações personalizadas
 
-Executa o aplicativo no modo de desenvolvimento.\
-Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no seu navegador.
+## Tecnologias Utilizadas
 
-A página será recarregada quando você fizer alterações.\
-Você também pode ver erros de lint no console.
+- Frontend: React.js
+- Backend: Node.js com Express
+- Banco de Dados: MongoDB (via Mongoose)
+- Análise de Dados: Python (scikit-learn, pandas, numpy)
 
-### `npm test`
+## Como Iniciar a Aplicação
 
-Inicia o executor de testes no modo de observação interativo.\
-Consulte a seção sobre [execução de testes](https://facebook.github.io/create-react-app/docs/running-tests) para obter mais informações.
+### Pré-requisitos
 
-### `npm run build`
+- Node.js (versão 14 ou superior)
+- npm (normalmente vem com Node.js)
+- Python 3.7 ou superior
+- MongoDB
 
-Cria o aplicativo para produção na pasta `build`.\
-Ele agrupa corretamente o React no modo de produção e otimiza a compilação para o melhor desempenho.
+### Instalação
 
-A compilação é minificada e os nomes dos arquivos incluem os hashes.\
-Seu aplicativo está pronto para ser implantado!
+1. Clone o repositório:
+   ```
+   git clone https://github.com/seu-usuario/trade-analyzer.git
+   cd trade-analyzer
+   ```
 
-Veja a seção sobre [implantação](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
+2. Instale as dependências:
+   ```
+   npm run install-all
+   ```
 
-### `npm run eject`
+3. Configure as variáveis de ambiente:
+   Crie um arquivo `.env` na raiz do projeto e na pasta `backend` com as seguintes variáveis:
+   ```
+   MONGODB_URI=sua_uri_do_mongodb
+   JWT_SECRET=seu_segredo_jwt
+   ```
 
-**Observação: esta é uma operação unidirecional. Depois de `ejetar`, você não pode voltar atrás!**
+4. Instale as dependências Python:
+   ```
+   cd backend
+   pip install -r requirements.txt
+   ```
 
-Se você não estiver satisfeito com a ferramenta de compilação e as opções de configuração, você pode `ejetar` a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
+### Executando a Aplicação
 
-Em vez disso, ele copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc.) diretamente para o seu projeto para que você tenha controle total sobre eles. Todos os comandos, exceto `eject`, ainda funcionarão, mas eles apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto, você está por conta própria.
+1. Na raiz do projeto, inicie a aplicação:
+   ```
+   npm start
+   ```
 
-Você nunca precisa usar `eject`. O conjunto de recursos selecionados é adequado para implantações pequenas e médias, e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que essa ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronto para isso.
+   Isso iniciará tanto o servidor backend quanto o frontend.
 
-## Saiba mais
+2. Acesse a aplicação em seu navegador:
+   [http://localhost:3000](http://localhost:3000)
 
-Você pode aprender mais na [documentação do aplicativo Create React](https://facebook.github.io/create-react-app/docs/getting-started).
+## Uso
 
-Para aprender React, confira a [documentação do React](https://reactjs.org/).
+1. Registre-se ou faça login na aplicação.
+2. Selecione um ativo para análise.
+3. Configure os parâmetros de simulação (saldo inicial, stop loss, take profit, etc.).
+4. Execute a simulação e analise os resultados.
 
-### Divisão de código
+## Contribuindo
 
-Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contribuições são bem-vindas! Por favor, leia o arquivo CONTRIBUTING.md para detalhes sobre nosso código de conduta e o processo para enviar pull requests.
 
-### Analisando o tamanho do pacote
+## Licença
 
-Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
 
-### Criando um aplicativo da Web progressivo
+## Contato
 
-Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Seu Nome - seu-email@exemplo.com
 
-### Configuração avançada
+Link do Projeto: [https://github.com/ivanpires2000/trade-analyzer](https://github.com/ivanpires2000/trade-analyzer)
+```
 
-Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Este README fornece uma visão geral do projeto, explica como configurar e iniciar a aplicação, e oferece informações básicas sobre seu uso. Você pode ajustar os detalhes conforme necessário, especialmente as informações de contato e os links do repositório.
 
-### Implantação
-
-Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` falha ao minificar
-
-Esta seção foi movida para cá: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lembre-se de criar os arquivos mencionados (CONTRIBUTING.md e LICENSE.md) se eles ainda não existirem em seu projeto. Além disso, certifique-se de que as instruções de instalação e execução estão precisas e funcionam corretamente em seu ambiente de desenvolvimento.
